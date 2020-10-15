@@ -18,10 +18,11 @@
 
 cc_library_shared {
     name: "libcameraservice",
+
     defaults: [
-        "camera_needs_client_info_defaults",
-        "no_cameraserver_defaults",
         "qti_camera_device_defaults",
+        "no_cameraserver_defaults",
+        "target_camera_needs_client_info_defaults",
     ],
 
     // Camera service source
